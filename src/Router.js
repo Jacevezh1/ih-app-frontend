@@ -9,7 +9,7 @@ import Home from './components/Home'
 import Layout from './components/Layout'
 import Sauces from './components/Sauces'
 
-
+import SauceState from './context/Sauce/SauceState'
 
 
 // 2. Funcion
@@ -18,26 +18,28 @@ const Router = () => {
 
     return (
 		<>
+		
+			<SauceState>
+				<BrowserRouter>
+					<Routes>
+						<Route path="/" element={<Layout />}>
+							
+							{/* localhost:3000/ */}
+							<Route index element={<Home />} />
 
-			<BrowserRouter>
-				<Routes>
-					<Route path="/" element={<Layout />}>
-						
-                        {/* localhost:3000/ */}
-						<Route index element={<Home />} />
+							{/* localhost:3000/registro */}
+							<Route path="registro" element={<Register />} />
 
-						{/* localhost:3000/registro */}
-						<Route path="registro" element={<Register />} />
+							{/* localhost:3000/iniciar-sesion */}
+							<Route path="iniciar-sesion" element={<Login />} />
 
-						{/* localhost:3000/iniciar-sesion */}
-						<Route path="iniciar-sesion" element={<Login />} />
+							{/* localhost:3000/sauces */}
+							<Route path="sauces" element={<Sauces />} />
 
-						{/* localhost:3000/sauces */}
-						<Route path="sauces" element={<Sauces />} />
-
-					</Route>
-				</Routes>
-			</BrowserRouter>
+						</Route>
+					</Routes>
+				</BrowserRouter>
+			</SauceState>
 		
 		</>
 	)
