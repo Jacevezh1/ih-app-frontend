@@ -51,6 +51,22 @@ const SauceState = (props) => {
 	} 
 
 
+	const getSauce = async (sauceId) => {
+		
+		const res = await axiosClient.get(`sauces/readone/${sauceId}`)
+
+		const selectedSauce = res.data.data
+
+		dispatch({
+			type: "GET_SAUCE",
+			payload: selectedSauce
+		})
+
+		return "Listo"
+
+	}
+
+
 
 
 
@@ -61,7 +77,8 @@ const SauceState = (props) => {
 			value={{
 				sauces: globalState.sauces,
 				singleSauce: globalState.singleSauce,
-                getSauces
+                getSauces,
+				getSauce
 	
 			}}
 		>

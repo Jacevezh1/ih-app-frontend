@@ -43,31 +43,20 @@ export default function Sauces() {
                             return (
                                 <li key={element._id}>
 
-                                    <p>{element.name}</p>
+                                    <Link to={`/sauces/${element._id}`} >
+                                        {element.name}
+									</Link>
                                     <p>{element.content}</p>
                                     <p>{element.description}</p>
                                     <p>{element.precio}</p>
                                     <img src={element.image} alt="salsa"/>
                                     <p>{element.ml}</p>
-
-
                                 
                                 </li>
                             )
-
-
-
-
                         })
-
-
-
-
                     }
                 </ul>
-            
-            
-            
             </div>
 
 
