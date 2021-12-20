@@ -37,10 +37,6 @@ const SauceState = (props) => {
 
 		const res = await axiosClient.get("sauces/readall")
 
-        // ELIMINAR
-		console.log("Obteniendo sauces...")
-        
-		
 		const list = res.data.data
 
 		dispatch({

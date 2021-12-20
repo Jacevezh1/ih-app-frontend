@@ -8,7 +8,7 @@ export default function Header() {
     return (
       
      
-        <header class="bg-red-300">
+        <header class="bg-lime-300">
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
             <div class="w-full py-6 flex items-center justify-between border-b border-indigo-500 lg:border-none">
             <div class="flex items-center">
@@ -35,8 +35,8 @@ export default function Header() {
                 </div>
             </div>
             <div class="ml-10 space-x-4">
-                <Link to="/registro" class="inline-block bg-lime-300 py-2 px-4 border border-transparent rounded-md text-base font-medium text-indigo-600 hover:bg-blue-800">Sign in</Link>
-                <Link to="/iniciar-sesion" class="inline-block bg-lime-300 py-2 px-4 border border-transparent rounded-md text-base font-medium text-indigo-600 hover:bg-blue-800">Sign up</Link>
+                <Link to="/registro" class="inline-block bg-red-400 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-blue-800">Sign in</Link>
+                <Link to="/iniciar-sesion" class="inline-block bg-red-400 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-blue-800">Sign up</Link>
             </div>
             </div>
             <div class="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
