@@ -63,6 +63,15 @@ const SauceState = (props) => {
 	}
 
 
+	const createSauce = async (form) => {
+
+		const res = await axiosClient.post("sauces/create", form)
+
+		console.log(res);
+
+	}
+
+
 
 
 
@@ -74,7 +83,8 @@ const SauceState = (props) => {
 				sauces: globalState.sauces,
 				singleSauce: globalState.singleSauce,
                 getSauces,
-				getSauce
+				getSauce,
+				createSauce
 	
 			}}
 		>
