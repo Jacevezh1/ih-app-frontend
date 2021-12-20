@@ -91,6 +91,15 @@ const UserState = (props) => {
 	}
 
 
+	const logoutUser = async () => {
+
+		dispatch({
+            type: "LOGOUT_USUARIO"
+        })
+
+	}
+
+
 
 
 
@@ -103,7 +112,8 @@ const UserState = (props) => {
 				authStatus: globalState.authStatus,
 				registerUser,
 				loginUser, 
-				verifyingToken
+				verifyingToken,
+				logoutUser
 				
 			}}
 		>
