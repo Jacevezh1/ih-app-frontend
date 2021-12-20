@@ -29,6 +29,10 @@ export default function Header() {
                     Recipes
                 </Link>
 
+                <Link to="/contact" class="text-base font-medium text-white hover:text-indigo-50" key="Company">
+                    Contact
+                </Link>
+
                 <Link to="/sauces" class="text-base font-medium text-white hover:text-indigo-50" key="Company">
                     Sauce
                 </Link>
@@ -50,6 +54,10 @@ export default function Header() {
 
             <Link to="/recipes" class="text-base font-medium text-white hover:text-indigo-50" key="Docs">
                Recipes
+            </Link>
+
+            <Link to="/contact" class="text-base font-medium text-white hover:text-indigo-50" key="Docs">
+               Contact
             </Link>
 
             <Link to="/sauces" class="text-base font-medium text-white hover:text-indigo-50" key="Company">

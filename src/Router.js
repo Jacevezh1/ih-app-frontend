@@ -16,6 +16,8 @@ import Sauces from './components/Sauces'
 import Single from './components/Sauces/Single'
 
 import SauceState from './context/Sauce/SauceState'
+import UserState from './context/User/UserState'
+
 
 
 // 2. Funcion
@@ -25,6 +27,8 @@ const Router = () => {
     return (
 		<>
 		
+
+		<UserState>
 			<SauceState>
 				<BrowserRouter>
 					<Routes>
@@ -59,6 +63,8 @@ const Router = () => {
 					</Routes>
 				</BrowserRouter>
 			</SauceState>
+		</UserState>
+			
 		
 		</>
 	)
