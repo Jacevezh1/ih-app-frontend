@@ -13,8 +13,10 @@ import Recipes from './components/Recipes'
 
 import Layout from './components/Layout'
 import Sauces from './components/Sauces'
-import CreateSauce from './components/Sauces/Create'
 import Single from './components/Sauces/Single'
+
+import CreateSauce from './components/Sauces/Create'
+import EditSauce from './components/Sauces/Single/Edit'
 
 import SauceState from './context/Sauce/SauceState'
 import UserState from './context/User/UserState'
@@ -58,6 +60,9 @@ const Router = () => {
 
 							{/* localhost:3000/sauces/crear */}
 							<Route path="sauces/crear" element={<CreateSauce />} />
+
+							{/* localhost:3000/guitarras/:id/editar */}
+							<Route path="sauces/:id/editar" element={<EditSauce />} />
 
 							{/* localhost:3000/sauces/:id */}
 							<Route path="sauces/:id" element={<Single />} />
