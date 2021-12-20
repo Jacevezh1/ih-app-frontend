@@ -63,6 +63,29 @@ const SauceState = (props) => {
 	}
 
 
+	const createSauce = async (form) => {
+
+		const res = await axiosClient.post("sauces/create", form)
+
+		console.log(res);
+
+	}
+
+
+	const updateSauce = async (form, idSauce) => {
+
+		const res = await axiosClient.put(`sauces/edit/${idSauce}`, form)
+
+		const updatedSauce = res.data.data
+
+		dispatch({
+			type: "UPDATE_SAUCE",
+			payload: updatedSauce
+		})
+
+	}
+
+
 
 
 
@@ -74,7 +97,9 @@ const SauceState = (props) => {
 				sauces: globalState.sauces,
 				singleSauce: globalState.singleSauce,
                 getSauces,
-				getSauce
+				getSauce,
+				createSauce,
+				updateSauce
 	
 			}}
 		>

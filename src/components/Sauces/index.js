@@ -1,3 +1,4 @@
+//
 import React, { useEffect, useContext } from 'react'
 import SauceContext from './../../context/Sauce/SauceContext'
 import { Link } from 'react-router-dom'
@@ -65,7 +66,7 @@ export default function Sauces() {
                                             </Link>
                                         </h3>
                                         <p>
-                                            {element.precio}
+                                           {element.precio}
                                         </p>
                                         </div>
                                         <p class="mt-1 text-sm italic text-gray-500">
@@ -73,11 +74,11 @@ export default function Sauces() {
                                         </p>
 
                                         <p class="mt-1 text-sm italic text-gray-500">
-                                            {element.ml}
+                                           Ml: {element.ml}
                                         </p>
 
                                         <p class="mt-1 text-sm italic text-gray-500">
-                                            {element.content}
+                                           Content: {element.content}
                                         </p>
 
                 

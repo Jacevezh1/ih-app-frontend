@@ -14,7 +14,8 @@ const UserState = (props) => {
 			country: "",
 			adress: "",
 			email: "",
-			password: ""
+			password: "",
+			/* admin: false */
 		},
 		authStatus: false	
 	}
@@ -90,6 +91,15 @@ const UserState = (props) => {
 	}
 
 
+	const logoutUser = async () => {
+
+		dispatch({
+            type: "LOGOUT_USUARIO"
+        })
+
+	}
+
+
 
 
 
@@ -102,7 +112,8 @@ const UserState = (props) => {
 				authStatus: globalState.authStatus,
 				registerUser,
 				loginUser, 
-				verifyingToken
+				verifyingToken,
+				logoutUser
 				
 			}}
 		>

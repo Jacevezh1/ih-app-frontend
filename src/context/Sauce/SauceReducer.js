@@ -7,6 +7,7 @@ const reducer = (globalState, action) => {
 	switch (action.type) {
 
 		case "GET_SAUCE":
+		case "UPDATE_SAUCE":
 			return {
 				...globalState,
 				singleSauce: action.payload
