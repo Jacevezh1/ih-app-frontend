@@ -15,7 +15,8 @@ const UserState = (props) => {
 			adress: "",
 			email: "",
 			password: ""
-		}	
+		},
+		authStatus: false	
 	}
 
 
@@ -41,6 +42,54 @@ const UserState = (props) => {
 	}
 
 
+	const loginUser = async (form) => {
+
+		const res = await axiosClient.post("users/login", form)
+
+		console.log(res)
+
+		const token = res.data.data
+
+		dispatch({
+			type: "LOGIN_EXITOSO",
+			payload: token
+		})
+
+	}
+
+
+	const verifyingToken = async () => {
+
+		const token = localStorage.getItem("token")
+
+		// ANEXAR TOKEN A LA SIGUIENTE PETICIÓN DE AXIOS
+		if(token) {
+			axiosClient.defaults.headers.common["x-auth-token"] = token
+		} else {
+			delete axiosClient.defaults.headers.common["x-auth-token"]
+		}
+
+		try {
+			
+			const res = await axiosClient.get("users/verifytoken")
+
+			console.log(res)
+
+			const userData = res.data.data
+
+			dispatch({
+				type: "GET_DATA_USER",
+				payload: userData
+			})
+
+		} catch (error) {
+			console.log(error)
+		}
+
+
+	}
+
+
 
 
 
@@ -50,7 +99,10 @@ const UserState = (props) => {
 		<UserContext.Provider
 			value={{
 				currentUser: globalState.currentUser,
-				registerUser
+				authStatus: globalState.authStatus,
+				registerUser,
+				loginUser, 
+				verifyingToken
 				
 			}}
 		>
