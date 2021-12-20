@@ -16,17 +16,7 @@ export default function Home() {
     return (
 
         <>
-              <div>
-            Este es el Home
-            <button onClick={() => {
-              verifyingToken()
-            }}>
-              Verificar sesión
-            </button>
-
-          </div>
-
-        
+             
         <div class="bg-white">
           <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
             <div class="text-center">
@@ -45,7 +35,7 @@ export default function Home() {
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
           <div class="absolute inset-0">
-            <img class="h-full w-full object-cover" src="https://images.pexels.com/photos/3208323/pexels-photo-3208323.jpeg" alt="People working on laptops"/>
+            <img class="h-full w-full object-cover" src="https://images.pexels.com/photos/7720533/pexels-photo-7720533.jpeg" alt="People working on laptops"/>
             <div class="absolute inset-0 bg-gradient-to-r from-lime-200 to-lime-200 mix-blend-multiply"></div>
           </div>
           <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
@@ -126,3 +116,18 @@ export default function Home() {
 
 
 
+
+
+
+/*  <!-- Account -->
+            <a href="#" class="p-2 text-gray-400 hover:text-gray-500 lg:ml-4">
+              <span class="sr-only">Account</span>
+              <!-- Heroicon name: outline/user -->
+              <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+              </svg>
+            </a> */
+
+
+   
+            
