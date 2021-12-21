@@ -1,7 +1,23 @@
-import React from 'react'
+
+import { Link } from "react-router-dom";
+import React, { useState, useContext, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+import UserContext from './../../context/User/UserContext'
 
 
 export default function Profile() {
+    
+    
+    // 1. Estado Global
+	const ctx = useContext(UserContext)
+
+    
+    const { currentUser } = ctx
+
+
+	// 2. ESTADO LOCAL
+
+
     return (
         <>
            
@@ -21,38 +37,45 @@ export default function Profile() {
                     Full name
                     </dt>
                     <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    Margot Foster
-                    </dd>
-                </div>
-                <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-                    <dt class="text-sm font-medium text-gray-500">
-                    Email address
-                    </dt>
-                    <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    margotfoster@example.com
+                    {currentUser.name}
                     </dd>
                 </div>
                 <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt class="text-sm font-medium text-gray-500">
-                    Country
+                    Email address
                     </dt>
                     <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    USA
+                    {currentUser.email}
                     </dd>
                 </div>
                 <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
                     <dt class="text-sm font-medium text-gray-500">
+                    Country
+                    </dt>
+                    <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                    {currentUser.country}
+                    </dd>
+                </div>
+                <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                    <dt class="text-sm font-medium text-gray-500">
                     Address
                     </dt>
                     <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    Fugiat ipsum ipsum deserunt culpa aute sint do nostrud anim incididunt cillum culpa consequat. Excepteur qui ipsum aliquip consequat sint. Sit id mollit nulla mollit nostrud in ea officia proident. Irure nostrud pariatur mollit ad adipisicing reprehenderit deserunt qui eu.
+                    {currentUser.adress}
                     </dd>
                 </div>
                 </dl>
 
-                <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                    Edit profile
-                </button>
+                 <div class="mt-4 flex md:mt-0">
+                    <Link to={`/editprofile`}>
+                        <button type="button" class="ml-3 inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            Editar User
+                        </button>
+                    </Link>
+		        </div>
+
+
+
             </div>
             </div>
 

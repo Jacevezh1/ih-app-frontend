@@ -21,6 +21,8 @@ import EditSauce from './components/Sauces/Single/Edit'
 
 import SauceState from './context/Sauce/SauceState'
 import UserState from './context/User/UserState'
+import EditProfiles from './components/User/Single/EditUser'
+
 
 import Auth from './routes/Auth'
 import Private from './routes/Private'
@@ -72,6 +74,9 @@ const Router = () => {
 
 							{/* localhost:3000/profile */}
 							<Route path="profile" element={<Private component={Profile} />} />
+							
+							{/* localhost:3000/editprofile */}
+							<Route path="editprofile" element={<Private component={EditProfiles} />} />
 							
 							
 						</Route>

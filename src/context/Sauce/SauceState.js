@@ -86,6 +86,13 @@ const SauceState = (props) => {
 	}
 
 
+	const deleteSauce = async (idSauce) => {
+
+		const res = await axiosClient.delete(`sauces/delete/${idSauce}`)
+
+	}
+
+
 
 
 
@@ -99,7 +106,8 @@ const SauceState = (props) => {
                 getSauces,
 				getSauce,
 				createSauce,
-				updateSauce
+				updateSauce,
+				deleteSauce
 	
 			}}
 		>
