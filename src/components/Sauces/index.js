@@ -74,7 +74,7 @@ export default function Sauces() {
                                         </p>
 
                                         <p class="mt-1 text-sm italic text-gray-500">
-                                           Ml: {element.ml}
+                                           Ml: {element.ml} Oz.
                                         </p>
 
                                         <p class="mt-1 text-sm italic text-gray-500">

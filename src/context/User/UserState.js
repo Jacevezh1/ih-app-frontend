@@ -30,7 +30,7 @@ const UserState = (props) => {
 
 		const res = await axiosClient.post("users/create", form)
 		
-		console.log(res)
+		
 
         console.log(form);
 
@@ -47,7 +47,7 @@ const UserState = (props) => {
 
 		const res = await axiosClient.post("users/login", form)
 
-		console.log(res)
+		
 
 		const token = res.data.data
 
@@ -74,7 +74,7 @@ const UserState = (props) => {
 			
 			const res = await axiosClient.get("users/verifytoken")
 
-			console.log(res)
+			
 
 			const userData = res.data.data
 
@@ -100,6 +100,23 @@ const UserState = (props) => {
 	}
 
 
+	const updateUser = async (form, idUser) => {
+
+		const res = await axiosClient.put(`users/edit/${idUser}`, form)
+
+		const updateUser = res.data.data
+
+		dispatch({
+			type: "UPDATE_USER",
+			payload: updateUser
+		})
+
+	}
+
+
+	
+
+
 
 
 
@@ -113,7 +130,8 @@ const UserState = (props) => {
 				registerUser,
 				loginUser, 
 				verifyingToken,
-				logoutUser
+				logoutUser,
+				updateUser
 				
 			}}
 		>
