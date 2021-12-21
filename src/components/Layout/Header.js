@@ -5,6 +5,7 @@ import UserContext from '../../context/User/UserContext'
 
 
 export default function Header() {
+  
     const ctx = useContext(UserContext);
 
     const { currentUser, verifyingToken, logoutUser } = ctx;
