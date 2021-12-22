@@ -1,9 +1,27 @@
 import React, { useState, useContext } from 'react'
 import SauceContext from './../../context/Sauce/SauceContext'
+import { useNavigate } from 'react-router-dom'
+import UserContext from '../../context/User/UserContext'
+
 
 export default function CreateSauce() {
 
-	// 1. ESTADO GLOBAL
+	
+	// I .User CTX
+
+	const navigate = useNavigate()
+
+	const ctxUser = useContext(UserContext);
+	
+	const { currentUser } = ctxUser
+
+	if (!currentUser.admin) {
+		navigate("/")	
+	} 
+	
+	
+	
+	// 1. ESTADO GLOBAL SAUCE
 	const ctx = useContext(SauceContext)
 	const {
 		createSauce

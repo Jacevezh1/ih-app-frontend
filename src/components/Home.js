@@ -16,13 +16,14 @@ export default function Home() {
     return (
 
         <>
+
              
-        <div class="bg-white">
+        <div class="bg-gray-50">
           <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
             <div class="text-center">
-              <h2 class="text-base font-semibold text-indigo-600 tracking-wide uppercase">Salsa De mi Barrio</h2>
-              <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">Take control of your salsas.</p>
-              <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">Start building for free, then add a site plan to go live. Account plans unlock additional features.</p>
+              <h2 class="text-base font-semibold text-green-600 tracking-wide uppercase">Salsa Picante De mi Barrio</h2>
+              <p class="mt-1 text-4xl font-extrabold text-red-500 sm:text-5xl sm:tracking-tight lg:text-6xl ">Mexican Origin</p>
+              <p class="max-w-xl mt-5 mx-auto text-xl text-neutral-900">La Salsa para todas tus comidas...</p>
             </div>
           </div>
         </div>
@@ -31,7 +32,7 @@ export default function Home() {
         
         
        <div class="relative">
-      <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
+      <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-50"></div>
       <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
           <div class="absolute inset-0">
@@ -41,17 +42,17 @@ export default function Home() {
           <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
             <h1 class="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
               <span class="block text-white">Salsa De mi Barrio</span>
-              <span class="block text-indigo-200">Welcome!</span>
+              <span class="block text-green-600">Lime Hot Sauce!</span>
             </h1>
-            <p class="mt-6 max-w-lg mx-auto text-center text-xl text-indigo-200 sm:max-w-3xl">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.
+            <p class="mt-6 max-w-lg mx-auto text-center text-xl text-neutral-100 sm:max-w-3xl">
+              Salsa picante elaborada a base de chile Jalapeño, Sal y Limon con un nivel de picor entre 3000 y 5000 de acuerdo a la gráfica scoville. Añejada en barricas de roble hasta 1 año en Oaxaca, nuestra salsa original de chile verde Picante se elabora con tres ingredientes simples: Chile Jalapeño, sal y limon. 
             </p>
             <div class="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div class="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
-                <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-indigo-700 bg-white hover:bg-indigo-50 sm:px-8">
+                <a href="/sauces" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-red-500 bg-white hover:bg-indigo-50 sm:px-8">
                   Sauces
                 </a>
-                <a href="#" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-500 bg-opacity-60 hover:bg-opacity-70 sm:px-8">
+                <a href="/about" class="flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 bg-opacity-60 hover:bg-opacity-70 sm:px-8">
                   History
                 </a>
               </div>
@@ -68,18 +69,18 @@ export default function Home() {
           <title id="svg-workcation">Salsa de mi Barrio</title>
           <defs>
             <pattern id="ad119f34-7694-4c31-947f-5c9d249b21f3" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-              <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+              <rect x="0" y="0" width="4" height="4" class="text-green-600" fill="currentColor" />
             </pattern>
           </defs>
           <rect width="404" height="404" fill="url(#ad119f34-7694-4c31-947f-5c9d249b21f3)" />
         </svg>
 
         <div class="relative">
-          <img class="mx-auto h-8" src="https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg" alt="Workcation"/>
+          <img class="mx-auto h-8" src="https://o.remove.bg/downloads/ce72bc66-e133-4e9a-8015-06b890574ca3/kisspng-salsa-latin-dance-porto-vecchio-dance-studio-dancing-5ac9a5bd636624.1592681215231646054072-removebg-preview.png" alt="Salsa"/>
           <blockquote class="mt-10">
             <div class="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900">
               <p>
-                &ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.&rdquo;
+               Una salsa que cambio la forma en la como interactuamos con la comida, sumamente versátil, puede mejorar el sabor de cualquier alimento como ser parte de los ingredientes de cualquier preparación.
               </p>
             </div>
             <footer class="mt-8">
@@ -88,13 +89,13 @@ export default function Home() {
                   <img class="mx-auto h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                 </div>
                 <div class="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
-                  <div class="text-base font-medium text-gray-900">Judith Black</div>
+                  <div class="text-base font-medium text-gray-900">Karen Herrera</div>
 
-                  <svg class="hidden md:block mx-1 h-5 w-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                  <svg class="hidden md:block mx-1 h-5 w-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M11 0h3L9 20H6l5-20z" />
                   </svg>
 
-                  <div class="text-base font-medium text-gray-500">CEO, Workcation</div>
+                  <div class="text-base font-medium text-red-500">CEO, Food.Inc</div>
                 </div>
               </div>
             </footer>

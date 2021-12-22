@@ -1,9 +1,9 @@
 import React, {useContext, useEffect, useState} from 'react'
-import {Navigate} from 'react-router-dom'
+import { Navigate } from 'react-router-dom'
 import UserContext from '../context/User/UserContext'
 
 
-export default function PublicRoute({ component: Component, ...props }) {
+export default function PrivateRoute({ component: Component, ...props }) {
 
     const userCtx = useContext(UserContext)
     

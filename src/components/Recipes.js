@@ -16,7 +16,7 @@ export default function Recipes() {
           <div class="mt-12 mx-auto max-w-md px-4 grid gap-8 sm:max-w-lg sm:px-6 lg:px-8 lg:grid-cols-3 lg:max-w-7xl">
             <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div class="flex-shrink-0">
-                <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt=""/>
+                <img class="h-48 w-full object-cover" src="https://images.pexels.com/photos/3642718/pexels-photo-3642718.jpeg" alt=""/>
               </div>
               <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div class="flex-1">
@@ -27,7 +27,7 @@ export default function Recipes() {
                   </p>
                   <a href="#" class="block mt-2">
                     <p class="text-xl font-semibold text-gray-900">
-                      Boost your conversion rate
+                      Tacos picantes...
                     </p>
                     <p class="mt-3 text-base text-gray-500">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.
@@ -64,18 +64,18 @@ export default function Recipes() {
 
             <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div class="flex-shrink-0">
-                <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt=""/>
+                <img class="h-48 w-full object-cover" src="https://images.pexels.com/photos/7909831/pexels-photo-7909831.jpeg" alt=""/>
               </div>
               <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div class="flex-1">
                   <p class="text-sm font-medium text-cyan-600">
                     <a href="#" class="hover:underline">
-                      Video
+                      Article
                     </a>
                   </p>
                   <a href="#" class="block mt-2">
                     <p class="text-xl font-semibold text-gray-900">
-                      How to use search engine optimization to drive sales
+                     Salsa de mi barrio Con Carne 
                     </p>
                     <p class="mt-3 text-base text-gray-500">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.
@@ -112,18 +112,18 @@ export default function Recipes() {
 
             <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
               <div class="flex-shrink-0">
-                <img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80" alt=""/>
+                <img class="h-48 w-full object-cover" src="https://images.pexels.com/photos/2092897/pexels-photo-2092897.jpeg" alt=""/>
               </div>
               <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                 <div class="flex-1">
                   <p class="text-sm font-medium text-cyan-600">
                     <a href="#" class="hover:underline">
-                      Case Study
+                      Article
                     </a>
                   </p>
                   <a href="#" class="block mt-2">
                     <p class="text-xl font-semibold text-gray-900">
-                      Improve your customer experience
+                      Nachos with Salsa Picante
                     </p>
                     <p class="mt-3 text-base text-gray-500">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.

@@ -116,7 +116,7 @@ export default function EditProfiles() {
 						</div>
 					</div>
 					<div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
-						<button type="submit" class="bg-indigo-600 border border-transparent rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+						<button type="submit" class="border border-transparent rounded-md shadow-sm py-2 px-4 inline-flex justify-center text-sm font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600   transition ease-in-out delay-150 bg-green-600 hover:-translate-y-1 hover:scale-110 hover:bg-red-600 duration-300">
 							Guardar User
 						</button>
 					</div>
