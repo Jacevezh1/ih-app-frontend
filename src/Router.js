@@ -2,7 +2,6 @@
 import React from 'react'
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
 
-
 import Login from './components/Auth/Login'
 import Register from './components/Auth/Register'
 
@@ -23,12 +22,10 @@ import SauceState from './context/Sauce/SauceState'
 import UserState from './context/User/UserState'
 import EditProfiles from './components/User/Single/EditUser'
 
-
 import Auth from './routes/Auth'
 import PrivateRoute from './routes/Private'
 
 // 2. Funcion
-
 const Router = () => {
 
     return (
@@ -66,18 +63,16 @@ const Router = () => {
 							<Route path="sauces/crear" element={<PrivateRoute component={CreateSauce} />} />
 
 							{/* localhost:3000/guitarras/:id/editar */}
-							<Route path="sauces/:id/editar" element={<EditSauce />} />
+							<Route path="sauces/:id/editar" element={<PrivateRoute component={EditSauce} />} />
 
 							{/* localhost:3000/sauces/:id */}
 							<Route path="sauces/:id" element={<Single />} />
-
 
 							{/* localhost:3000/profile */}
 							<Route path="profile" element={<PrivateRoute component={Profile} />} />
 							
 							{/* localhost:3000/editprofile */}
 							<Route path="editprofile" element={<PrivateRoute component={EditProfiles} />} />
-							
 						
 						</Route>
 					</Routes>
