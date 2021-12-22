@@ -25,7 +25,7 @@ import EditProfiles from './components/User/Single/EditUser'
 
 
 import Auth from './routes/Auth'
-import Private from './routes/Private'
+import PrivateRoute from './routes/Private'
 
 // 2. Funcion
 
@@ -63,7 +63,7 @@ const Router = () => {
 							<Route path="sauces" element={<Sauces />}/>
 
 							{/* localhost:3000/sauces/crear */}
-							<Route path="sauces/crear" element={<CreateSauce />} />
+							<Route path="sauces/crear" element={<PrivateRoute component={CreateSauce} />} />
 
 							{/* localhost:3000/guitarras/:id/editar */}
 							<Route path="sauces/:id/editar" element={<EditSauce />} />
@@ -73,12 +73,12 @@ const Router = () => {
 
 
 							{/* localhost:3000/profile */}
-							<Route path="profile" element={<Private component={Profile} />} />
+							<Route path="profile" element={<PrivateRoute component={Profile} />} />
 							
 							{/* localhost:3000/editprofile */}
-							<Route path="editprofile" element={<Private component={EditProfiles} />} />
+							<Route path="editprofile" element={<PrivateRoute component={EditProfiles} />} />
 							
-							
+						
 						</Route>
 					</Routes>
 				</BrowserRouter>
