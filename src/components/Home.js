@@ -76,7 +76,7 @@ export default function Home() {
         </svg>
 
         <div class="relative">
-          <img class="mx-auto h-8" src="https://o.remove.bg/downloads/ce72bc66-e133-4e9a-8015-06b890574ca3/kisspng-salsa-latin-dance-porto-vecchio-dance-studio-dancing-5ac9a5bd636624.1592681215231646054072-removebg-preview.png" alt="Salsa"/>
+          <img class="mx-auto h-8" src="https://icon-library.com/images/spice-icon/spice-icon-14.jpg" alt="Salsa"/>
           <blockquote class="mt-10">
             <div class="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900">
               <p>
