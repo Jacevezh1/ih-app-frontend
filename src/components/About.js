@@ -28,7 +28,7 @@ export default function About() {
                     <div class="absolute inset-0 bg-gradient-to-t from-rose-600 via-rose-600 opacity-90"></div>
                     <div class="relative px-8">
                         <div>
-                        <img class="h-12" src="https://o.remove.bg/downloads/ce72bc66-e133-4e9a-8015-06b890574ca3/kisspng-salsa-latin-dance-porto-vecchio-dance-studio-dancing-5ac9a5bd636624.1592681215231646054072-removebg-preview.png" alt="Workcation"/>
+                        <img class="h-12" src="https://o.remove.bg/downloads/98bbc3c0-0678-402b-9280-30958b8f480e/Captura_de_Pantalla_2021-12-22_a_la_s__21.03.44-removebg-preview.png" alt="Workcation"/>
                         </div>
                         <blockquote class="mt-8">
                         <div class="relative text-lg font-medium text-white md:flex-grow">
