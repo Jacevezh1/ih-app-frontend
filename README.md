@@ -49,12 +49,12 @@ Manages app deployments with Git, the popular version control system. You defini
 
 -Prerequisites:
 
-Install Git and the Heroku CLI or connect your GitHub repository with heroku.
+Install Git and the Netlify CLI or connect your GitHub repository with Netlify.
 
 
 -Tracking your app in Git:
 
-Before you can deploy your app to Heroku, you need to initialize a local Git repository and commit your application code to it.
+Before you can deploy your app to Netlify, you need to initialize a local Git repository and commit your application code to it.
 
 
 -Creating a Netlify remote:
@@ -64,13 +64,13 @@ Git remotes are versions of your repository that live on other servers. You depl
 Netlify is an all-in-one platform for automating modern web projects. Replace your hosting infrastructure, continuous integration, and deployment pipeline with a single workflow. Integrate dynamic functionality like serverless functions, user authentication, and form handling as your projects grow.
 
 
-
 -For a new Netlify app:
 
 For repositories stored on GitHub.com, you can use Netlify CLI to connect your repository by running the following command from your local repository:
 
 ```
 $ netlify init
+
 ```
 
 For more info go to: https://docs.netlify.com/
@@ -134,6 +134,8 @@ We used [Git](https://git-scm.com/) para el versionado. Para todas las versiones
 
 -Rutas y componentes centralizados en el Router.
 
+-Variables de entorno para conectar Back-end
+
 ```
 
 ## b. Dependencias
@@ -152,11 +154,10 @@ We used [Git](https://git-scm.com/) para el versionado. Para todas las versiones
 
 ## e. Models 
 ```
-  1.  User:
+  1.  User.
  
-   2. Product:
+   2. Products.
    
-
 ```
 
 <br>
@@ -165,14 +166,11 @@ We used [Git](https://git-scm.com/) para el versionado. Para todas las versiones
 ## f. Contextos
 
 ```
-
 a) Validacion de rutas privadas y publicas dependiendo estado del usuario.
 
 b) Validaciones en formularios (Crear, Editar)
 
 c) Global State, Initial State, para proveer de informacion.
-
-
 
 ```
 
@@ -180,7 +178,6 @@ c) Global State, Initial State, para proveer de informacion.
 <br>
 
 ## g. Sessions
-
 
 ```
 
@@ -190,15 +187,12 @@ a) Configuracion basica de la sessiones:
 
   -Verificacion de Tokens
 
-
-
 ```
 
 <br>
 
 
 ## h. CRUD
-
 
 ```
 
@@ -211,7 +205,6 @@ b) Read
 c) Update
 
 d) Delete
-
 
 ```
 
