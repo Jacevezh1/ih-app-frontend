@@ -22,7 +22,7 @@ export default function Header() {
                 <div class="flex items-center">
                     <Link to="/">
                     <span class="sr-only">Workflow</span>
-                    <img class="h-10 w-auto" src="https://o.remove.bg/downloads/98bbc3c0-0678-402b-9280-30958b8f480e/Captura_de_Pantalla_2021-12-22_a_la_s__21.03.44-removebg-preview.png" alt="logochile"/>
+                    <img class="h-10 w-auto" src="https://icon-library.com/images/spice-icon/spice-icon-14.jpg" alt="logochile"/>
                     </Link>
                     <div class="hidden ml-10 space-x-8 lg:block">
                     <Link to="/" class="text-base font-medium text-white hover:text-red-600" key="Solution">

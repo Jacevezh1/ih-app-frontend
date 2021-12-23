@@ -32,7 +32,7 @@ export default function Sauces() {
                 <div class="text-center">
                 <h2 class="text-base font-semibold text-red-600 tracking-wide uppercase">Products</h2>
                 <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">Salsa Picante de mi Barrio</p>
-                <p class="max-w-xl mt-5 mx-auto text-xl text-green-600">Start building for free, then add a site plan to go live. Account plans unlock additional features.</p>
+                <p class="max-w-xl mt-5 mx-auto text-xl text-green-600">Elige la Salsa de tu gusto, tenemos multiples sabores para todo tipo de platillo</p>
                 </div>
             </div>
             </div>

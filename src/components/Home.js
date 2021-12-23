@@ -76,7 +76,7 @@ export default function Home() {
         </svg>
 
         <div class="relative">
-          <img class="mx-auto h-8" src="https://o.remove.bg/downloads/98bbc3c0-0678-402b-9280-30958b8f480e/Captura_de_Pantalla_2021-12-22_a_la_s__21.03.44-removebg-preview.png" alt="Salsa"/>
+          <img class="mx-auto h-8" src="https://icon-library.com/images/spice-icon/spice-icon-14.jpg" alt="Salsa"/>
           <blockquote class="mt-10">
             <div class="max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900">
               <p>
