@@ -41,7 +41,7 @@ export default function Login() {
       
         <div class="min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div class="sm:mx-auto sm:w-full sm:max-w-md">
-            <img class="mx-auto h-12 w-auto" src="https://o.remove.bg/downloads/98bbc3c0-0678-402b-9280-30958b8f480e/Captura_de_Pantalla_2021-12-22_a_la_s__21.03.44-removebg-preview.png" alt="Workflow"/>
+            <img class="mx-auto h-12 w-auto" src="https://icon-library.com/images/spice-icon/spice-icon-14.jpg" alt="Workflow"/>
             <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
             Sign in to your account
             </h2>

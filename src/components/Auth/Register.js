@@ -47,7 +47,7 @@ export default function Register() {
         <div class="flex-1 flex flex-col justify-center py-12 px-4 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
             <div class="mx-auto w-full max-w-sm lg:w-96">
             <div>
-                <img class="h-12 w-auto" src="https://o.remove.bg/downloads/98bbc3c0-0678-402b-9280-30958b8f480e/Captura_de_Pantalla_2021-12-22_a_la_s__21.03.44-removebg-preview.png" alt="Workflow"/>
+                
                 <h2 class="mt-6 text-3xl font-extrabold text-gray-900">
                 Sign in to your account
                 </h2>
